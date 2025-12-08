@@ -1,0 +1,13 @@
+=== Final Deterministic Evaluation ===
+
+Base U-Net:
+2/2 [==============================] - 0s 34ms/step
+Dice: 0.0075 | IoU: 0.0039 | Accuracy: 0.9534 | Sensitivity: 0.0193 | Specificity: 0.9836
+
+VGG16 U-Net:
+2/2 [==============================] - 0s 82ms/step
+Dice: 0.6717 | IoU: 0.5588 | Accuracy: 0.9897 | Sensitivity: 0.6636 | Specificity: 0.9959
+
+ResNet50 U-Net:
+2/2 [==============================] - 1s 43ms/step
+Dice: 0.1108 | IoU: 0.0617 | Accuracy: 0.7888 | Sensitivity: 0.5138 | Specificity: 0.7989

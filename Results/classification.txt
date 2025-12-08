@@ -1,0 +1,89 @@
+Data loaded successfully. Output shape: (2501, 224, 224, 3)
+
+=== Phase 1: 5-Fold Cross-Validation ===
+
+--- Fold 1 ---
+2025-11-28 01:26:04.467638: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2025-11-28 01:26:05.167514: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+54/54 [==============================] - 1s 7ms/step
+Fold 1 F1-score (Best Model): 0.8491
+
+--- Fold 2 ---
+54/54 [==============================] - 1s 7ms/step
+Fold 2 F1-score (Best Model): 0.8800
+
+--- Fold 3 ---
+54/54 [==============================] - 1s 8ms/step
+Fold 3 F1-score (Best Model): 0.8837
+
+--- Fold 4 ---
+54/54 [==============================] - 1s 6ms/step
+Fold 4 F1-score (Best Model): 0.9231
+
+--- Fold 5 ---
+54/54 [==============================] - 1s 8ms/step
+Fold 5 F1-score (Best Model): 0.8485
+
+Cross-Validation Results:
+Average F1-score: 0.8769 ± 0.0275
+
+=== Phase 2: Training Final Model (90% Train / 10% Val) ===
+Final Train samples: 1912 | Final Validation samples: 213
+Class weights for final training: {0: 0.5721125074805505, 1: 3.966804979253112}
+Epoch 1/200
+239/239 [==============================] - 5s 12ms/step - loss: 0.4550 - accuracy: 0.8201 - val_loss: 0.2103 - val_accuracy: 0.9249
+Epoch 2/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.2869 - accuracy: 0.8734 - val_loss: 0.2102 - val_accuracy: 0.9155
+Epoch 3/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.2231 - accuracy: 0.9106 - val_loss: 0.0989 - val_accuracy: 0.9624
+Epoch 4/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.1645 - accuracy: 0.9273 - val_loss: 0.0878 - val_accuracy: 0.9765
+Epoch 5/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.1207 - accuracy: 0.9487 - val_loss: 0.0627 - val_accuracy: 0.9765
+Epoch 6/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.1028 - accuracy: 0.9550 - val_loss: 0.0657 - val_accuracy: 0.9718
+Epoch 7/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0885 - accuracy: 0.9671 - val_loss: 0.0492 - val_accuracy: 0.9859
+Epoch 8/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0799 - accuracy: 0.9634 - val_loss: 0.0759 - val_accuracy: 0.9671
+Epoch 9/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0765 - accuracy: 0.9681 - val_loss: 0.0377 - val_accuracy: 0.9906
+Epoch 10/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0680 - accuracy: 0.9759 - val_loss: 0.0395 - val_accuracy: 0.9906
+Epoch 11/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0658 - accuracy: 0.9786 - val_loss: 0.0492 - val_accuracy: 0.9812
+Epoch 12/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0416 - accuracy: 0.9843 - val_loss: 0.0459 - val_accuracy: 0.9859
+Epoch 13/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0466 - accuracy: 0.9822 - val_loss: 0.0338 - val_accuracy: 0.9859
+Epoch 14/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0664 - accuracy: 0.9702 - val_loss: 0.0934 - val_accuracy: 0.9765
+Epoch 15/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0360 - accuracy: 0.9833 - val_loss: 0.0466 - val_accuracy: 0.9812
+Epoch 16/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0523 - accuracy: 0.9791 - val_loss: 0.0548 - val_accuracy: 0.9812
+Epoch 17/200
+239/239 [==============================] - 2s 9ms/step - loss: 0.0285 - accuracy: 0.9916 - val_loss: 0.0647 - val_accuracy: 0.9812
+Epoch 18/200
+235/239 [============================>.] - ETA: 0s - loss: 0.0604 - accuracy: 0.9793Restoring model weights from the end of the best epoch: 13.
+239/239 [==============================] - 2s 9ms/step - loss: 0.0599 - accuracy: 0.9791 - val_loss: 0.0373 - val_accuracy: 0.9906
+Epoch 18: early stopping
+
+=== Phase 4: Evaluating on Held-out Test Set ===
+47/47 [==============================] - 1s 9ms/step
+
+Final Test F1-score: 0.9200
+
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99       328
+         1.0       0.88      0.96      0.92        48
+
+    accuracy                           0.98       376
+   macro avg       0.94      0.97      0.95       376
+weighted avg       0.98      0.98      0.98       376
+
+Confusion Matrix:
+ [[322   6]
+ [  2  46]]

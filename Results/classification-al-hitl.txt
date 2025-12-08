@@ -1,0 +1,398 @@
+Total dataset shape: (2501, 224, 224, 3)
+
+--- Data Split Summary ---
+Test Set: 376
+Validation Set: 255
+Initial Labeled Train: 187
+Unlabeled Pool: 1683
+
+===== Strategy: entropy =====
+
+Iteration 0 - Labeled: 187
+2025-12-06 15:21:15.434579: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2025-12-06 15:21:16.440878: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2025-12-06 15:21:17.321294: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2466 | F1: 0.6154
+211/211 [==============================] - 3s 8ms/step
+
+Iteration 1 - Labeled: 217
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2721 | F1: 0.6038
+207/207 [==============================] - 3s 8ms/step
+
+Iteration 2 - Labeled: 247
+47/47 [==============================] - 1s 7ms/step
+Val Loss: 0.3225 | F1: 0.6988
+203/203 [==============================] - 3s 8ms/step
+
+Iteration 3 - Labeled: 277
+47/47 [==============================] - 2s 8ms/step
+Val Loss: 0.1297 | F1: 0.7447
+200/200 [==============================] - 3s 8ms/step
+
+Iteration 4 - Labeled: 307
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2101 | F1: 0.7568
+196/196 [==============================] - 3s 8ms/step
+
+Iteration 5 - Labeled: 337
+47/47 [==============================] - 1s 9ms/step
+Val Loss: 0.1269 | F1: 0.7451
+192/192 [==============================] - 3s 8ms/step
+
+Iteration 6 - Labeled: 367
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.1285 | F1: 0.8315
+188/188 [==============================] - 3s 8ms/step
+
+Iteration 7 - Labeled: 397
+47/47 [==============================] - 1s 9ms/step
+Val Loss: 0.1323 | F1: 0.8539
+185/185 [==============================] - 3s 8ms/step
+
+Iteration 8 - Labeled: 427
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0754 | F1: 0.8696
+181/181 [==============================] - 3s 8ms/step
+
+Iteration 9 - Labeled: 457
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0911 | F1: 0.8667
+177/177 [==============================] - 3s 8ms/step
+
+Iteration 10 - Labeled: 487
+47/47 [==============================] - 2s 9ms/step
+Val Loss: 0.1430 | F1: 0.8723
+173/173 [==============================] - 3s 8ms/step
+
+Iteration 11 - Labeled: 517
+47/47 [==============================] - 1s 9ms/step
+Val Loss: 0.1114 | F1: 0.8132
+170/170 [==============================] - 3s 8ms/step
+
+Iteration 12 - Labeled: 547
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0632 | F1: 0.9130
+166/166 [==============================] - 3s 8ms/step
+
+Iteration 13 - Labeled: 577
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0523 | F1: 0.9149
+162/162 [==============================] - 3s 8ms/step
+
+Iteration 14 - Labeled: 607
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0887 | F1: 0.8864
+158/158 [==============================] - 3s 8ms/step
+
+Iteration 15 - Labeled: 637
+47/47 [==============================] - 1s 9ms/step
+Val Loss: 0.0453 | F1: 0.9278
+155/155 [==============================] - 3s 8ms/step
+
+Iteration 16 - Labeled: 667
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0367 | F1: 0.9333
+151/151 [==============================] - 2s 8ms/step
+
+Iteration 17 - Labeled: 697
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0488 | F1: 0.9130
+147/147 [==============================] - 2s 8ms/step
+
+Iteration 18 - Labeled: 727
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0252 | F1: 0.9333
+143/143 [==============================] - 2s 8ms/step
+
+Iteration 19 - Labeled: 757
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0436 | F1: 0.8660
+Stopping AL: F1 did not improve for 3 iterations.
+
+===== Strategy: least_confidence =====
+
+Iteration 0 - Labeled: 187
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.3635 | F1: 0.6429
+211/211 [==============================] - 3s 8ms/step
+
+Iteration 1 - Labeled: 217
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2896 | F1: 0.6415
+207/207 [==============================] - 3s 8ms/step
+
+Iteration 2 - Labeled: 247
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2436 | F1: 0.6000
+203/203 [==============================] - 3s 8ms/step
+
+Iteration 3 - Labeled: 277
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.1826 | F1: 0.7143
+200/200 [==============================] - 3s 8ms/step
+
+Iteration 4 - Labeled: 307
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2271 | F1: 0.7129
+196/196 [==============================] - 3s 8ms/step
+
+Iteration 5 - Labeled: 337
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.1332 | F1: 0.7312
+192/192 [==============================] - 3s 7ms/step
+
+Iteration 6 - Labeled: 367
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0710 | F1: 0.8235
+188/188 [==============================] - 3s 8ms/step
+
+Iteration 7 - Labeled: 397
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0839 | F1: 0.8000
+185/185 [==============================] - 3s 8ms/step
+
+Iteration 8 - Labeled: 427
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.1049 | F1: 0.8696
+181/181 [==============================] - 3s 8ms/step
+
+Iteration 9 - Labeled: 457
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0718 | F1: 0.9263
+177/177 [==============================] - 3s 8ms/step
+
+Iteration 10 - Labeled: 487
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0765 | F1: 0.8889
+173/173 [==============================] - 3s 8ms/step
+
+Iteration 11 - Labeled: 517
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.0859 | F1: 0.8352
+170/170 [==============================] - 3s 8ms/step
+
+Iteration 12 - Labeled: 547
+47/47 [==============================] - 1s 7ms/step
+Val Loss: 0.0922 | F1: 0.8696
+Stopping AL: F1 did not improve for 3 iterations.
+
+===== Strategy: random =====
+
+Iteration 0 - Labeled: 187
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.3272 | F1: 0.6506
+211/211 [==============================] - 3s 8ms/step
+
+Iteration 1 - Labeled: 217
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2250 | F1: 0.6667
+207/207 [==============================] - 3s 8ms/step
+
+Iteration 2 - Labeled: 247
+47/47 [==============================] - 2s 9ms/step
+Val Loss: 0.3089 | F1: 0.5657
+203/203 [==============================] - 3s 8ms/step
+
+Iteration 3 - Labeled: 277
+47/47 [==============================] - 1s 9ms/step
+Val Loss: 0.2103 | F1: 0.6957
+200/200 [==============================] - 3s 8ms/step
+
+Iteration 4 - Labeled: 307
+47/47 [==============================] - 1s 7ms/step
+Val Loss: 0.2043 | F1: 0.6824
+196/196 [==============================] - 3s 8ms/step
+
+Iteration 5 - Labeled: 337
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2194 | F1: 0.7292
+192/192 [==============================] - 3s 8ms/step
+
+Iteration 6 - Labeled: 367
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.3700 | F1: 0.6957
+188/188 [==============================] - 3s 8ms/step
+
+Iteration 7 - Labeled: 397
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.1939 | F1: 0.6731
+185/185 [==============================] - 3s 8ms/step
+
+Iteration 8 - Labeled: 427
+47/47 [==============================] - 1s 8ms/step
+Val Loss: 0.2146 | F1: 0.6869
+Stopping AL: F1 did not improve for 3 iterations.
+Comparative learning curve plot saved.
+
+=== Final Training for entropy ===
+Epoch 1/20
+86/86 [==============================] - 5s 23ms/step - loss: 0.6973 - accuracy: 0.5771 - val_loss: 0.7192 - val_accuracy: 0.3684
+Epoch 2/20
+86/86 [==============================] - 1s 15ms/step - loss: 0.6078 - accuracy: 0.6256 - val_loss: 0.6703 - val_accuracy: 0.6316
+Epoch 3/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.5278 - accuracy: 0.7166 - val_loss: 0.3838 - val_accuracy: 0.8684
+Epoch 4/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.4564 - accuracy: 0.7606 - val_loss: 0.5036 - val_accuracy: 0.7105
+Epoch 5/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.3624 - accuracy: 0.8282 - val_loss: 0.2748 - val_accuracy: 0.8947
+Epoch 6/20
+86/86 [==============================] - 1s 16ms/step - loss: 0.2840 - accuracy: 0.8987 - val_loss: 0.3487 - val_accuracy: 0.8553
+Epoch 7/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.2643 - accuracy: 0.8678 - val_loss: 0.2826 - val_accuracy: 0.8816
+Epoch 8/20
+86/86 [==============================] - 1s 15ms/step - loss: 0.2205 - accuracy: 0.9075 - val_loss: 0.2925 - val_accuracy: 0.8421
+Epoch 9/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.1605 - accuracy: 0.9280 - val_loss: 0.2587 - val_accuracy: 0.8947
+Epoch 10/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.1254 - accuracy: 0.9457 - val_loss: 0.2597 - val_accuracy: 0.9079
+Epoch 11/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.1483 - accuracy: 0.9383 - val_loss: 0.2714 - val_accuracy: 0.8947
+Epoch 12/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.1190 - accuracy: 0.9471 - val_loss: 0.2138 - val_accuracy: 0.9605
+Epoch 13/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.1080 - accuracy: 0.9677 - val_loss: 0.4866 - val_accuracy: 0.8553
+Epoch 14/20
+86/86 [==============================] - 1s 15ms/step - loss: 0.1176 - accuracy: 0.9515 - val_loss: 0.2230 - val_accuracy: 0.9211
+Epoch 15/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.0896 - accuracy: 0.9604 - val_loss: 0.2391 - val_accuracy: 0.9342
+Epoch 16/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.0779 - accuracy: 0.9662 - val_loss: 0.2464 - val_accuracy: 0.9342
+Epoch 17/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.0483 - accuracy: 0.9794 - val_loss: 0.2856 - val_accuracy: 0.9474
+Epoch 18/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.0596 - accuracy: 0.9809 - val_loss: 0.2898 - val_accuracy: 0.9211
+Epoch 19/20
+86/86 [==============================] - 1s 15ms/step - loss: 0.0430 - accuracy: 0.9750 - val_loss: 0.3038 - val_accuracy: 0.9342
+Epoch 20/20
+86/86 [==============================] - 1s 14ms/step - loss: 0.0745 - accuracy: 0.9721 - val_loss: 0.2155 - val_accuracy: 0.9474
+47/47 [==============================] - 1s 8ms/step
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98       328
+         1.0       0.89      0.83      0.86        48
+
+    accuracy                           0.97       376
+   macro avg       0.93      0.91      0.92       376
+weighted avg       0.96      0.97      0.96       376
+
+Confusion Matrix:
+ [[323   5]
+ [  8  40]]
+
+=== Final Training for least_confidence ===
+Epoch 1/20
+62/62 [==============================] - 5s 27ms/step - loss: 0.6961 - accuracy: 0.6118 - val_loss: 0.6280 - val_accuracy: 0.6545
+Epoch 2/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.6184 - accuracy: 0.6138 - val_loss: 0.5504 - val_accuracy: 0.7273
+Epoch 3/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.5808 - accuracy: 0.6931 - val_loss: 0.4952 - val_accuracy: 0.8000
+Epoch 4/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.4974 - accuracy: 0.7561 - val_loss: 0.5837 - val_accuracy: 0.5455
+Epoch 5/20
+62/62 [==============================] - 1s 13ms/step - loss: 0.4656 - accuracy: 0.7825 - val_loss: 0.4744 - val_accuracy: 0.6909
+Epoch 6/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.3659 - accuracy: 0.8598 - val_loss: 0.2979 - val_accuracy: 0.9091
+Epoch 7/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.3266 - accuracy: 0.8455 - val_loss: 0.3551 - val_accuracy: 0.8364
+Epoch 8/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.2518 - accuracy: 0.8923 - val_loss: 0.2818 - val_accuracy: 0.8727
+Epoch 9/20
+62/62 [==============================] - 1s 15ms/step - loss: 0.1889 - accuracy: 0.9207 - val_loss: 0.8071 - val_accuracy: 0.5636
+Epoch 10/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.2189 - accuracy: 0.8923 - val_loss: 0.1561 - val_accuracy: 0.9455
+Epoch 11/20
+62/62 [==============================] - 1s 15ms/step - loss: 0.1961 - accuracy: 0.9106 - val_loss: 0.1939 - val_accuracy: 0.8909
+Epoch 12/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.1197 - accuracy: 0.9472 - val_loss: 0.1564 - val_accuracy: 0.9455
+Epoch 13/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.1181 - accuracy: 0.9451 - val_loss: 0.1543 - val_accuracy: 0.9636
+Epoch 14/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.0967 - accuracy: 0.9654 - val_loss: 0.1456 - val_accuracy: 0.9273
+Epoch 15/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.0661 - accuracy: 0.9715 - val_loss: 0.1673 - val_accuracy: 0.9636
+Epoch 16/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.0951 - accuracy: 0.9593 - val_loss: 0.0627 - val_accuracy: 0.9636
+Epoch 17/20
+62/62 [==============================] - 1s 15ms/step - loss: 0.0581 - accuracy: 0.9898 - val_loss: 0.0648 - val_accuracy: 0.9636
+Epoch 18/20
+62/62 [==============================] - 1s 15ms/step - loss: 0.0841 - accuracy: 0.9634 - val_loss: 0.3651 - val_accuracy: 0.8727
+Epoch 19/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.0783 - accuracy: 0.9654 - val_loss: 0.1013 - val_accuracy: 0.9455
+Epoch 20/20
+62/62 [==============================] - 1s 14ms/step - loss: 0.0618 - accuracy: 0.9695 - val_loss: 0.0610 - val_accuracy: 0.9636
+47/47 [==============================] - 2s 7ms/step
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99       328
+         1.0       0.94      0.92      0.93        48
+
+    accuracy                           0.98       376
+   macro avg       0.96      0.95      0.96       376
+weighted avg       0.98      0.98      0.98       376
+
+Confusion Matrix:
+ [[325   3]
+ [  4  44]]
+
+=== Final Training for random ===
+Epoch 1/20
+48/48 [==============================] - 5s 31ms/step - loss: 0.5275 - accuracy: 0.7500 - val_loss: 0.6391 - val_accuracy: 0.6512
+Epoch 2/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.4348 - accuracy: 0.7812 - val_loss: 0.2999 - val_accuracy: 0.8605
+Epoch 3/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.2816 - accuracy: 0.8802 - val_loss: 0.4361 - val_accuracy: 0.8140
+Epoch 4/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.2250 - accuracy: 0.8932 - val_loss: 0.1130 - val_accuracy: 0.9535
+Epoch 5/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.1877 - accuracy: 0.9193 - val_loss: 0.1027 - val_accuracy: 0.9767
+Epoch 6/20
+48/48 [==============================] - 1s 15ms/step - loss: 0.1458 - accuracy: 0.9505 - val_loss: 0.1305 - val_accuracy: 0.9302
+Epoch 7/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.2369 - accuracy: 0.8880 - val_loss: 0.1048 - val_accuracy: 0.9767
+Epoch 8/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.1022 - accuracy: 0.9714 - val_loss: 0.1592 - val_accuracy: 0.9302
+Epoch 9/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0745 - accuracy: 0.9714 - val_loss: 0.1298 - val_accuracy: 0.9535
+Epoch 10/20
+48/48 [==============================] - 1s 15ms/step - loss: 0.1228 - accuracy: 0.9531 - val_loss: 0.0921 - val_accuracy: 0.9767
+Epoch 11/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0923 - accuracy: 0.9557 - val_loss: 0.1651 - val_accuracy: 0.9302
+Epoch 12/20
+48/48 [==============================] - 1s 15ms/step - loss: 0.0588 - accuracy: 0.9792 - val_loss: 0.1376 - val_accuracy: 0.9767
+Epoch 13/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0297 - accuracy: 0.9922 - val_loss: 0.1269 - val_accuracy: 0.9767
+Epoch 14/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0427 - accuracy: 0.9844 - val_loss: 0.1343 - val_accuracy: 0.9767
+Epoch 15/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0352 - accuracy: 0.9818 - val_loss: 0.1593 - val_accuracy: 0.9767
+Epoch 16/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0440 - accuracy: 0.9844 - val_loss: 0.1045 - val_accuracy: 0.9767
+Epoch 17/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0437 - accuracy: 0.9792 - val_loss: 0.0827 - val_accuracy: 0.9767
+Epoch 18/20
+48/48 [==============================] - 1s 15ms/step - loss: 0.0313 - accuracy: 0.9896 - val_loss: 0.1377 - val_accuracy: 0.9767
+Epoch 19/20
+48/48 [==============================] - 1s 15ms/step - loss: 0.0424 - accuracy: 0.9740 - val_loss: 0.1061 - val_accuracy: 0.9767
+Epoch 20/20
+48/48 [==============================] - 1s 14ms/step - loss: 0.0136 - accuracy: 0.9974 - val_loss: 0.1421 - val_accuracy: 0.9767
+47/47 [==============================] - 1s 8ms/step
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.95      0.96      0.96       328
+         1.0       0.72      0.65      0.68        48
+
+    accuracy                           0.92       376
+   macro avg       0.83      0.80      0.82       376
+weighted avg       0.92      0.92      0.92       376
+
+Confusion Matrix:
+ [[316  12]
+ [ 17  31]]
+Final Test F1-Score (entropy): 0.8602
+Final Test F1-Score (least_confidence): 0.9263
+Final Test F1-Score (random): 0.6813

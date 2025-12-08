@@ -1,0 +1,270 @@
+Total Positive Images: 318
+
+--- Data Split Summary ---
+Test Set: 48
+Validation Set: 33
+Initial Labeled Train: 23
+Unlabeled Pool: 214
+
+===== Strategy: entropy =====
+
+Iteration 0 - Labeled: 23
+2025-12-06 18:56:38.951629: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2025-12-06 18:56:39.611672: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2025-12-06 18:56:42.347890: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Iteration 0 metrics: Dice=0.3390, IoU=0.2360, Loss=0.2273
+27/27 [==============================] - 3s 116ms/step
+
+Iteration 1 - Labeled: 53
+Iteration 1 metrics: Dice=0.4295, IoU=0.3340, Loss=0.0773
+23/23 [==============================] - 1s 53ms/step
+
+Iteration 2 - Labeled: 83
+Iteration 2 metrics: Dice=0.5179, IoU=0.4274, Loss=0.0563
+20/20 [==============================] - 2s 93ms/step
+
+Iteration 3 - Labeled: 113
+Iteration 3 metrics: Dice=0.4933, IoU=0.4056, Loss=0.0651
+16/16 [==============================] - 2s 136ms/step
+
+Iteration 4 - Labeled: 143
+Iteration 4 metrics: Dice=0.5681, IoU=0.4762, Loss=0.0623
+12/12 [==============================] - 1s 50ms/step
+
+Iteration 5 - Labeled: 173
+Iteration 5 metrics: Dice=0.5960, IoU=0.5010, Loss=0.0634
+8/8 [==============================] - 0s 49ms/step
+
+Iteration 6 - Labeled: 203
+Iteration 6 metrics: Dice=0.5847, IoU=0.4922, Loss=0.0612
+5/5 [==============================] - 0s 61ms/step
+
+Iteration 7 - Labeled: 233
+Iteration 7 metrics: Dice=0.5951, IoU=0.4987, Loss=0.0873
+1/1 [==============================] - 0s 34ms/step
+
+===== Strategy: least_confidence =====
+
+Iteration 0 - Labeled: 23
+Iteration 0 metrics: Dice=0.2205, IoU=0.1511, Loss=0.2283
+27/27 [==============================] - 1s 48ms/step
+
+Iteration 1 - Labeled: 53
+Iteration 1 metrics: Dice=0.4534, IoU=0.3643, Loss=0.0505
+23/23 [==============================] - 1s 48ms/step
+
+Iteration 2 - Labeled: 83
+Iteration 2 metrics: Dice=0.4779, IoU=0.3923, Loss=0.0729
+20/20 [==============================] - 1s 47ms/step
+
+Iteration 3 - Labeled: 113
+Iteration 3 metrics: Dice=0.5309, IoU=0.4257, Loss=0.0624
+16/16 [==============================] - 1s 51ms/step
+
+Iteration 4 - Labeled: 143
+Iteration 4 metrics: Dice=0.5225, IoU=0.4326, Loss=0.0729
+12/12 [==============================] - 1s 52ms/step
+
+Iteration 5 - Labeled: 173
+Iteration 5 metrics: Dice=0.5719, IoU=0.4732, Loss=0.0666
+8/8 [==============================] - 0s 51ms/step
+
+Iteration 6 - Labeled: 203
+Iteration 6 metrics: Dice=0.6085, IoU=0.5119, Loss=0.0585
+5/5 [==============================] - 0s 51ms/step
+
+Iteration 7 - Labeled: 233
+Iteration 7 metrics: Dice=0.6206, IoU=0.5211, Loss=0.0869
+1/1 [==============================] - 0s 33ms/step
+
+===== Strategy: random =====
+
+Iteration 0 - Labeled: 23
+Iteration 0 metrics: Dice=0.3642, IoU=0.2585, Loss=0.1564
+27/27 [==============================] - 1s 54ms/step
+
+Iteration 1 - Labeled: 53
+Iteration 1 metrics: Dice=0.3843, IoU=0.3063, Loss=0.0925
+23/23 [==============================] - 1s 47ms/step
+
+Iteration 2 - Labeled: 83
+Iteration 2 metrics: Dice=0.5298, IoU=0.4337, Loss=0.0798
+20/20 [==============================] - 1s 47ms/step
+
+Iteration 3 - Labeled: 113
+Iteration 3 metrics: Dice=0.5579, IoU=0.4614, Loss=0.0828
+16/16 [==============================] - 1s 47ms/step
+
+Iteration 4 - Labeled: 143
+Iteration 4 metrics: Dice=0.5697, IoU=0.4744, Loss=0.0774
+12/12 [==============================] - 1s 47ms/step
+
+Iteration 5 - Labeled: 173
+Iteration 5 metrics: Dice=0.5907, IoU=0.4932, Loss=0.0932
+8/8 [==============================] - 0s 47ms/step
+
+Iteration 6 - Labeled: 203
+Iteration 6 metrics: Dice=0.5844, IoU=0.4896, Loss=0.0897
+5/5 [==============================] - 0s 47ms/step
+
+Iteration 7 - Labeled: 233
+Iteration 7 metrics: Dice=0.5732, IoU=0.4801, Loss=0.0830
+1/1 [==============================] - 0s 32ms/step
+
+=== Final metrics for strategy entropy ===
+Dice: 0.6360
+IoU: 0.5213
+Accuracy: 0.9971
+Sensitivity: 0.6059
+Specificity: 0.9990
+
+=== Final metrics for strategy least_confidence ===
+Dice: 0.7114
+IoU: 0.5964
+Accuracy: 0.9975
+Sensitivity: 0.6898
+Specificity: 0.9990
+
+=== Final metrics for strategy random ===
+Dice: 0.6594
+IoU: 0.5485
+Accuracy: 0.9972
+Sensitivity: 0.6275
+Specificity: 0.9991
+
+=== Final Training for entropy ===
+Epoch 1/25
+27/27 [==============================] - 5s 138ms/step - loss: 0.5800 - dice_coef: 0.0052 - iou_coef: 0.0023 - val_loss: 0.5148 - val_dice_coef: 0.0139 - val_iou_coef: 0.0060
+Epoch 2/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.4470 - dice_coef: 0.1501 - iou_coef: 0.0625 - val_loss: 0.4287 - val_dice_coef: 0.2028 - val_iou_coef: 0.0927
+Epoch 3/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.3039 - dice_coef: 0.4365 - iou_coef: 0.1807 - val_loss: 0.3444 - val_dice_coef: 0.3457 - val_iou_coef: 0.1562
+Epoch 4/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.2276 - dice_coef: 0.5750 - iou_coef: 0.2803 - val_loss: 0.2786 - val_dice_coef: 0.4690 - val_iou_coef: 0.2367
+Epoch 5/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1865 - dice_coef: 0.6491 - iou_coef: 0.3562 - val_loss: 0.2190 - val_dice_coef: 0.5793 - val_iou_coef: 0.3006
+Epoch 6/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.1580 - dice_coef: 0.7019 - iou_coef: 0.4021 - val_loss: 0.2775 - val_dice_coef: 0.4740 - val_iou_coef: 0.2441
+Epoch 7/25
+27/27 [==============================] - 4s 130ms/step - loss: 0.1448 - dice_coef: 0.7303 - iou_coef: 0.4227 - val_loss: 0.2016 - val_dice_coef: 0.6115 - val_iou_coef: 0.3107
+Epoch 8/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1372 - dice_coef: 0.7424 - iou_coef: 0.4547 - val_loss: 0.1794 - val_dice_coef: 0.6548 - val_iou_coef: 0.3653
+Epoch 9/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1129 - dice_coef: 0.7877 - iou_coef: 0.4992 - val_loss: 0.1681 - val_dice_coef: 0.6765 - val_iou_coef: 0.3818
+Epoch 10/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.1218 - dice_coef: 0.7706 - iou_coef: 0.4988 - val_loss: 0.1869 - val_dice_coef: 0.6416 - val_iou_coef: 0.3582
+Epoch 11/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1038 - dice_coef: 0.8061 - iou_coef: 0.5473 - val_loss: 0.1572 - val_dice_coef: 0.6985 - val_iou_coef: 0.4091
+Epoch 12/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0872 - dice_coef: 0.8366 - iou_coef: 0.5795 - val_loss: 0.1511 - val_dice_coef: 0.7108 - val_iou_coef: 0.4082
+Epoch 13/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0877 - dice_coef: 0.8364 - iou_coef: 0.5832 - val_loss: 0.1652 - val_dice_coef: 0.6841 - val_iou_coef: 0.3875
+Epoch 14/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0805 - dice_coef: 0.8500 - iou_coef: 0.6110 - val_loss: 0.1611 - val_dice_coef: 0.6927 - val_iou_coef: 0.4010
+Epoch 15/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0814 - dice_coef: 0.8465 - iou_coef: 0.6239 - val_loss: 0.1692 - val_dice_coef: 0.6758 - val_iou_coef: 0.3780
+Epoch 16/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0776 - dice_coef: 0.8544 - iou_coef: 0.6368 - val_loss: 0.1522 - val_dice_coef: 0.7093 - val_iou_coef: 0.4143
+Epoch 17/25
+27/27 [==============================] - 4s 130ms/step - loss: 0.0708 - dice_coef: 0.8681 - iou_coef: 0.6562 - val_loss: 0.1546 - val_dice_coef: 0.7042 - val_iou_coef: 0.4179
+
+=== Final Training for least_confidence ===
+Epoch 1/25
+27/27 [==============================] - 5s 138ms/step - loss: 0.5583 - dice_coef: 0.0056 - iou_coef: 0.0024 - val_loss: 0.5125 - val_dice_coef: 0.0100 - val_iou_coef: 0.0047
+Epoch 2/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.4439 - dice_coef: 0.1557 - iou_coef: 0.0744 - val_loss: 0.3820 - val_dice_coef: 0.2625 - val_iou_coef: 0.0918
+Epoch 3/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.2717 - dice_coef: 0.4941 - iou_coef: 0.2174 - val_loss: 0.2670 - val_dice_coef: 0.4836 - val_iou_coef: 0.1944
+Epoch 4/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.2133 - dice_coef: 0.6038 - iou_coef: 0.3068 - val_loss: 0.2395 - val_dice_coef: 0.5384 - val_iou_coef: 0.2385
+Epoch 5/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1732 - dice_coef: 0.6713 - iou_coef: 0.3629 - val_loss: 0.2060 - val_dice_coef: 0.6017 - val_iou_coef: 0.2529
+Epoch 6/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1612 - dice_coef: 0.6995 - iou_coef: 0.3973 - val_loss: 0.1953 - val_dice_coef: 0.6234 - val_iou_coef: 0.2577
+Epoch 7/25
+27/27 [==============================] - 4s 130ms/step - loss: 0.1313 - dice_coef: 0.7556 - iou_coef: 0.4590 - val_loss: 0.1952 - val_dice_coef: 0.6224 - val_iou_coef: 0.2482
+Epoch 8/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1269 - dice_coef: 0.7616 - iou_coef: 0.4885 - val_loss: 0.1935 - val_dice_coef: 0.6268 - val_iou_coef: 0.2777
+Epoch 9/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1183 - dice_coef: 0.7762 - iou_coef: 0.5037 - val_loss: 0.1875 - val_dice_coef: 0.6393 - val_iou_coef: 0.2724
+Epoch 10/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1020 - dice_coef: 0.8096 - iou_coef: 0.5416 - val_loss: 0.1836 - val_dice_coef: 0.6462 - val_iou_coef: 0.2942
+Epoch 11/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.1012 - dice_coef: 0.8119 - iou_coef: 0.5506 - val_loss: 0.2119 - val_dice_coef: 0.5912 - val_iou_coef: 0.2797
+Epoch 12/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0974 - dice_coef: 0.8184 - iou_coef: 0.5440 - val_loss: 0.2043 - val_dice_coef: 0.6063 - val_iou_coef: 0.2986
+Epoch 13/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0920 - dice_coef: 0.8282 - iou_coef: 0.5752 - val_loss: 0.1763 - val_dice_coef: 0.6602 - val_iou_coef: 0.2792
+Epoch 14/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0849 - dice_coef: 0.8424 - iou_coef: 0.6015 - val_loss: 0.1785 - val_dice_coef: 0.6569 - val_iou_coef: 0.3097
+Epoch 15/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0788 - dice_coef: 0.8530 - iou_coef: 0.6254 - val_loss: 0.1869 - val_dice_coef: 0.6409 - val_iou_coef: 0.3208
+Epoch 16/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0790 - dice_coef: 0.8505 - iou_coef: 0.6274 - val_loss: 0.1820 - val_dice_coef: 0.6505 - val_iou_coef: 0.3090
+Epoch 17/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0848 - dice_coef: 0.8402 - iou_coef: 0.6147 - val_loss: 0.1779 - val_dice_coef: 0.6580 - val_iou_coef: 0.3209
+Epoch 18/25
+27/27 [==============================] - 4s 130ms/step - loss: 0.0990 - dice_coef: 0.8151 - iou_coef: 0.5841 - val_loss: 0.1907 - val_dice_coef: 0.6333 - val_iou_coef: 0.3017
+
+=== Final Training for random ===
+Epoch 1/25
+27/27 [==============================] - 4s 138ms/step - loss: 0.5340 - dice_coef: 0.0223 - iou_coef: 0.0101 - val_loss: 0.4795 - val_dice_coef: 0.0656 - val_iou_coef: 0.0313
+Epoch 2/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.3735 - dice_coef: 0.2923 - iou_coef: 0.1315 - val_loss: 0.3844 - val_dice_coef: 0.2700 - val_iou_coef: 0.1309
+Epoch 3/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.2377 - dice_coef: 0.5589 - iou_coef: 0.2704 - val_loss: 0.2659 - val_dice_coef: 0.4884 - val_iou_coef: 0.2291
+Epoch 4/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1859 - dice_coef: 0.6520 - iou_coef: 0.3271 - val_loss: 0.2529 - val_dice_coef: 0.5130 - val_iou_coef: 0.2363
+Epoch 5/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1510 - dice_coef: 0.7151 - iou_coef: 0.4060 - val_loss: 0.2081 - val_dice_coef: 0.5999 - val_iou_coef: 0.3049
+Epoch 6/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.1426 - dice_coef: 0.7343 - iou_coef: 0.4285 - val_loss: 0.2398 - val_dice_coef: 0.5396 - val_iou_coef: 0.2467
+Epoch 7/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1277 - dice_coef: 0.7610 - iou_coef: 0.4613 - val_loss: 0.1990 - val_dice_coef: 0.6183 - val_iou_coef: 0.3140
+Epoch 8/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1174 - dice_coef: 0.7783 - iou_coef: 0.5031 - val_loss: 0.1953 - val_dice_coef: 0.6249 - val_iou_coef: 0.3322
+Epoch 9/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.1026 - dice_coef: 0.8093 - iou_coef: 0.5278 - val_loss: 0.1929 - val_dice_coef: 0.6299 - val_iou_coef: 0.3101
+Epoch 10/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0924 - dice_coef: 0.8260 - iou_coef: 0.5564 - val_loss: 0.1821 - val_dice_coef: 0.6499 - val_iou_coef: 0.3482
+Epoch 11/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0908 - dice_coef: 0.8307 - iou_coef: 0.5629 - val_loss: 0.1954 - val_dice_coef: 0.6253 - val_iou_coef: 0.3414
+Epoch 12/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0961 - dice_coef: 0.8204 - iou_coef: 0.5716 - val_loss: 0.1915 - val_dice_coef: 0.6319 - val_iou_coef: 0.3318
+Epoch 13/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0921 - dice_coef: 0.8273 - iou_coef: 0.5638 - val_loss: 0.2059 - val_dice_coef: 0.6053 - val_iou_coef: 0.3111
+Epoch 14/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0817 - dice_coef: 0.8480 - iou_coef: 0.5943 - val_loss: 0.1803 - val_dice_coef: 0.6542 - val_iou_coef: 0.3538
+Epoch 15/25
+27/27 [==============================] - 4s 128ms/step - loss: 0.0770 - dice_coef: 0.8541 - iou_coef: 0.6328 - val_loss: 0.1888 - val_dice_coef: 0.6386 - val_iou_coef: 0.3666
+Epoch 16/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0760 - dice_coef: 0.8559 - iou_coef: 0.6384 - val_loss: 0.2051 - val_dice_coef: 0.6090 - val_iou_coef: 0.3255
+Epoch 17/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0848 - dice_coef: 0.8400 - iou_coef: 0.5993 - val_loss: 0.1892 - val_dice_coef: 0.6374 - val_iou_coef: 0.3639
+Epoch 18/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0755 - dice_coef: 0.8587 - iou_coef: 0.6379 - val_loss: 0.1900 - val_dice_coef: 0.6369 - val_iou_coef: 0.3699
+Epoch 19/25
+27/27 [==============================] - 4s 129ms/step - loss: 0.0727 - dice_coef: 0.8642 - iou_coef: 0.6387 - val_loss: 0.2032 - val_dice_coef: 0.6099 - val_iou_coef: 0.3370
+
+=== FINAL TRAINING METRICS PER STRATEGY ===
+
+--- Strategy: entropy ---
+Dice Coefficient: 0.5167
+IoU: 0.4163
+Accuracy: 0.9977
+Sensitivity: 0.5012
+Specificity: 0.9990
+
+--- Strategy: least_confidence ---
+Dice Coefficient: 0.3374
+IoU: 0.2772
+Accuracy: 0.9981
+Sensitivity: 0.3331
+Specificity: 0.9995
+
+--- Strategy: random ---
+Dice Coefficient: 0.4447
+IoU: 0.3563
+Accuracy: 0.9976
+Sensitivity: 0.4443
+Specificity: 0.9991
